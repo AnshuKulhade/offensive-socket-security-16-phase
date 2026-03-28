@@ -9,6 +9,17 @@ This phase demonstrates a critical design flaw in socket-based systems:
 
 This assumption leads to **state contamination**, where authentication persists across unintended scopes.
 
+
+
+## Running the Project
+
+Set multiple startup projects in Visual Studio:
+
+1. Right click solution → Set Startup Projects  
+2. Choose "Multiple startup projects"  
+3. Set both ServerListener and ClientSender to "Start"  
+4. Press F5  
+   
 ---
 
 ## Core Insight
