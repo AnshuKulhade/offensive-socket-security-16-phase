@@ -144,6 +144,38 @@ This pattern exists in real systems:
 * Enforce re-authentication on identity change
 
 ---
+## Fix Strategy
+
+The issue occurs because authentication is bound to the connection instead of the request.
+
+### Option 1 — Request-Level Validation (Recommended)
+- Validate authentication per request (e.g., token/session)
+- Do not rely on persistent connection state
+
+### Option 2 — State Reset on Identity Change (Mitigation)
+- Reset authentication when identity changes
+
+```csharp
+// Option 1 — Request-level validation
+if (ValidateRequest(msg))
+    client.Send(Encoding.UTF8.GetBytes("SECRET_DATA: salary=90000"));
+else
+    client.Send(Encoding.UTF8.GetBytes("DENIED"));
+
+// Option 2 — Reset auth on identity change
+else if (msg.StartsWith("BECOME:"))
+{
+    string newUser = msg.Substring(7);
+    isAuthenticated = false;
+    client.Send(Encoding.UTF8.GetBytes($"You are now {newUser}. Please re-authenticate."));
+}
+```
+Note: ValidateRequest() is intentionally abstract here.
+
+Per-request token validation is covered in later phases.
+
+---
+
 
 ## Detection Signals
 
