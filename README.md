@@ -89,6 +89,19 @@ offensive-socket-security-16-phase/
 - Basic understanding of TCP/IP
 
 ---
+## Execution Model
+
+Each phase may include:
+
+- A vulnerable server (target system)
+- An exploit client (attacker simulation)
+
+Some phases require running both server and client simultaneously
+to reproduce real-world behavior and protocol-level issues.
+
+Execution details are provided inside each phase directory.
+
+---
 
 ## Key Principle
 
