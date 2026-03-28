@@ -3,7 +3,9 @@
 
 ## Overview
 
-This phase demonstrates a critical design flaw in socket-based systems:
+**Category:** Authentication Boundary Failure (State Contamination)
+
+This phase demonstrates a boundary failure in socket-based systems...
 
 > A connection is treated as an identity boundary.
 
@@ -155,15 +157,6 @@ This pattern exists in real systems:
 > The system did not fail due to missing authentication —
 > it failed because authentication was applied at the wrong boundary.
 
----
-
-## How to Run
-
-1. Open the solution file (.sln)
-2. Run the Server project
-3. Run the Client project
-
-Then execute:
 
 ```
 AUTH:secret
