@@ -3,11 +3,22 @@ Status: Ongoing research — phases released progressively.
 
 A system-level analysis of raw TCP socket vulnerabilities, state contamination,protocol desynchronization, and real-world exploitation patterns using .NET (C#).
 
-Start Here
-→ Phase 01 — Connection vs Request (State Contamination)
+Start Here → 
 
-What This Is
+Phase 01 — Connection vs Request (State Contamination)
+
+## What This Is
 This repository is a structured research series exploring how socket-based systemsbehave under real-world conditions — and how incorrect assumptions at the connection,state, and protocol layers lead to security failures.
+
+## Research Approach
+
+Each phase follows:
+
+- Vulnerable implementation  
+- Exploit reproduction  
+- Root cause analysis  
+- Defensive control mapping  
+
 
 Focus is on:
 
@@ -15,14 +26,16 @@ Focus is on:
 - State lifecycle
 - Protocol boundaries
 - Failure-driven analysis
-Why This Matters
+
+## Why This Matters
 Most systems incorrectly treat a connection as a trusted boundary.
 
 This project demonstrates how:
 
-Connection ≠ identity
-State persists across unintended scopes
-Protocol assumptions break under real conditions
+- Connection ≠ identity
+- State persists across unintended scopes
+- Protocol assumptions break under real conditions
+
 Research Scope (16 Phases)
 Each phase represents a distinct failure pattern in socket-based systems.
 
