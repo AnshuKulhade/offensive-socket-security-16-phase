@@ -26,25 +26,26 @@ Protocol assumptions break under real conditions
 Research Scope (16 Phases)
 Each phase represents a distinct failure pattern in socket-based systems.
 
-Phase	Title
-01	Connection vs Request (State Contamination)
-02	Lifecycle as Control Flow (FIN vs RST)
-03	Blocking & Thread Starvation (Thread Pinning)
-04	Time-of-Check vs Time-of-Use (TOCTOU)
-05	Stream Desynchronization (Parser Desync, Request Smuggling, Response Queue Poisoning)
-06	Framing & Boundary Failure (Active Boundary Exploitation)
-07	Connection Reuse & Identity Bleed
-08	Concurrency & Cross-Client Contamination
-09	Protocol State Machines (Order Abuse)
-10	Replay Attacks (Stateless Abuse)
-11	Errors as State Transitions
-12	Resource Pinning (Slowloris Pattern)
-13	Socket vs Workflow (Partial Commit)
-14	Buffer Handling & Bounds Failure
-15	Monitoring, Detection & Evasion
-16	Capstone: Adversary Simulation
-Repository Layout
-Each phase contains a vulnerable implementation, exploit flow, and system-level analysis.
+## Structure — 16 Phases
+
+| Phase | Title |
+|------|------|
+| 01 | Connection vs Request (State Contamination) |
+| 02 | Lifecycle as Control Flow (FIN vs RST) |
+| 03 | Blocking & Thread Starvation (Thread Pinning) |
+| 04 | Time-of-Check vs Time-of-Use (TOCTOU) |
+| 05 | Stream Desynchronization (Parser Desync, Request Smuggling, Response Queue Poisoning) |
+| 06 | Framing & Boundary Failure (Active Boundary Exploitation) |
+| 07 | Connection Reuse & Identity Bleed |
+| 08 | Concurrency & Cross-Client Contamination |
+| 09 | Protocol State Machines (Order Abuse) |
+| 10 | Replay Attacks (Stateless Abuse) |
+| 11 | Errors as State Transitions |
+| 12 | Resource Pinning (Slowloris Pattern) |
+| 13 | Socket vs Workflow (Partial Commit) |
+| 14 | Buffer Handling & Bounds Failure |
+| 15 | Monitoring, Detection & Evasion |
+| 16 | Capstone: Adversary Simulation |
 ```
 
 offensive-socket-security-16-phase/
