@@ -1,4 +1,4 @@
-# # Offensive Socket Security: 16-Phase Research & Exploitation Series (.NET C#)
+# Offensive Socket Security: 16-Phase Research & Exploitation Series (.NET C#)
 Status: Ongoing research — phases released progressively.
 
 A system-level analysis of raw TCP socket vulnerabilities, state contamination,protocol desynchronization, and real-world exploitation patterns using .NET (C#).
@@ -11,10 +11,10 @@ This repository is a structured research series exploring how socket-based syste
 
 Focus is on:
 
-System behavior
-State lifecycle
-Protocol boundaries
-Failure-driven analysis
+- System behavior
+- State lifecycle
+- Protocol boundaries
+- Failure-driven analysis
 Why This Matters
 Most systems incorrectly treat a connection as a trusted boundary.
 
@@ -45,6 +45,7 @@ Phase	Title
 16	Capstone: Adversary Simulation
 Repository Layout
 Each phase contains a vulnerable implementation, exploit flow, and system-level analysis.
+```
 
 offensive-socket-security-16-phase/
 │
@@ -62,6 +63,7 @@ offensive-socket-security-16-phase/
 │
 └── Phase-NN-.../
 └── ...
+```
 
 
 ---
