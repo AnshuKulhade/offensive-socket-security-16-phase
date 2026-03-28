@@ -119,8 +119,30 @@ Without request-level validation, it becomes a **security boundary failure**.
 
 ---
 
+
 ## Note
 
-This repository is intended for system analysis and security research.
+This repository is built for system analysis and security research.
 All implementations are intentionally vulnerable to demonstrate real-world failure patterns.
-Not intended for production use.
+
+Not designed for production use.
+
+
+---
+
+## Research & Development
+
+**Lead Researcher:** [Anshu Kulhade](https://github.com/AnshuKulhade)  
+**Professional Profile:** [LinkedIn](https://www.linkedin.com/in/anshukulhade/)
+
+> **Citation:** If you utilize this research, code patterns, or exploitation logic in professional audits, tools, or educational content, please provide attribution to this repository.
+
+---
+
+
+
+## License
+
+This project is licensed under the MIT License.
+
+See the [LICENSE](./LICENSE) file for details.
