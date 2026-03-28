@@ -3,9 +3,7 @@ Status: Ongoing research — phases released progressively.
 
 A system-level analysis of raw TCP socket vulnerabilities, state contamination,protocol desynchronization, and real-world exploitation patterns using .NET (C#).
 
-Start Here → 
-
-Phase 01 — Connection vs Request (State Contamination)
+Start Here → [Phase 01 — Connection vs Request (State Contamination)](./Phase-01-Connection-vs-Request-State-Contamination/README.md)
 
 ## What This Is
 This repository is a structured research series exploring how socket-based systemsbehave under real-world conditions — and how incorrect assumptions at the connection,state, and protocol layers lead to security failures.
