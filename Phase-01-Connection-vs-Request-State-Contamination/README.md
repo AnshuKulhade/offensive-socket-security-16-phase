@@ -3,7 +3,8 @@
 
 ## Overview
 
-**Category:** Authentication Boundary Failure (State Contamination)
+Category: Authentication Boundary Failure  
+Pattern: Global State Contamination  
 
 This phase demonstrates a boundary failure in socket-based systems...
 
