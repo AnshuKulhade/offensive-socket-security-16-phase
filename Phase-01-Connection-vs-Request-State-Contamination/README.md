@@ -19,6 +19,8 @@ Set multiple startup projects in Visual Studio:
 2. Choose "Multiple startup projects"  
 3. Set both ServerListener and ClientSender to "Start"  
 4. Press F5  
+
+This runs both the vulnerable server and exploit client simultaneously.
    
 ---
 
