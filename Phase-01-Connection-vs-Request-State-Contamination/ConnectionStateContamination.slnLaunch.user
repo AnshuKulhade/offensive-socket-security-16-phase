@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "VulnerableServer\\VulnerableServer.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ExploitClient\\ExploitClient.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
