@@ -1,5 +1,5 @@
 # Offensive Socket Security: 16-Phase Research & Exploitation Series (.NET C#)
-Status: Ongoing research — phases released progressively.
+Status: Ongoing — actively expanding with weekly phase releases.
 
 A system-level analysis of raw TCP socket vulnerabilities, state contamination,protocol desynchronization, and real-world exploitation patterns using .NET (C#).
 
