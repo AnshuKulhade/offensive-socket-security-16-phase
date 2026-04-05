@@ -107,7 +107,7 @@ The system assumes:
 
 > processing success = delivery success  
 
-👉 This creates a **blind success condition**
+This creates a **blind success condition**
 
 ---
 
@@ -142,8 +142,8 @@ using (var stream = request.GetRequestStream())
     request.Abort(); // triggers RST, not FIN
 }
 ```
-Payload reaches server → Receive completes → COMMIT executes
-Connection closes before ACK → lifecycle breaks, execution remains
+**Payload reaches server → Receive completes → COMMIT executes**  
+Connection closes before ACK → lifecycle breaks, execution still remains
 
 ---
 
@@ -215,7 +215,7 @@ Receive ? → COMMIT ? → Connection drop → Abort
 ## Race Condition Window
 - Receive → COMMIT ? → RST
 - Non-deterministic execution outcome
-- Equivalent to torn write behavior
+- Equivalent to torn write behavior in distributed systems  
 
 ---
 
