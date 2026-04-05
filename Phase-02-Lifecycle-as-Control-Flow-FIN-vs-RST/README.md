@@ -158,10 +158,10 @@ This pattern exists in:
 
 
 ## Impact
-Duplicate execution on retry
-Inconsistent client/server state
-Silent data corruption
-Financial integrity risks
+- Duplicate execution on retry
+- Inconsistent client/server state
+- Silent data corruption
+- Financial integrity risks
 
 ---
 
