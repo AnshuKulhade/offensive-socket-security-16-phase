@@ -74,10 +74,10 @@ namespace ClientSender
 
 //**What to observe:**
 //```
-//AttackerMet() → server logs COMMIT + ERROR → balance changes → no ACK received
-//ClientMet()   → server logs COMMIT + ACK sent → balance changes → client receives ACK
+//AttackerMetRst() → server logs COMMIT + ERROR → balance changes → no ACK received
+//ClientMetFin()   → server logs COMMIT + ACK sent → balance changes → client receives ACK
 
-//Run AttackerMet() three times:
+//Run AttackerMetRst() three times:
 //→ balance stacks: $2000 → $3000 → $4000
 //→ server logs three errors
 //→ attacker received zero ACKs
