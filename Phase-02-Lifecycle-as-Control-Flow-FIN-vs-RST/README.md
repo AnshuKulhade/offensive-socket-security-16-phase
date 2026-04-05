@@ -26,6 +26,15 @@ Set multiple startup projects in Visual Studio:
 
 This runs both the vulnerable server and exploit client simultaneously.
 
+--- 
+
+## Note
+
+Unlike Phase 01, this phase does not require manual user input.
+
+Both the server and client run automatically once started.  
+To stop execution, use the debugger (Stop / Shift + F5).
+
 ---
 
 ## Core Insight
