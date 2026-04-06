@@ -1,38 +1,39 @@
 # Offensive Socket Security: 16-Phase Research & Exploitation Series (.NET C#)
-Status: Ongoing — actively expanding with weekly phase releases.
 
-A system-level analysis of raw TCP socket vulnerabilities, state contamination,protocol desynchronization, and real-world exploitation patterns using .NET (C#).
+> **⚠️ DISCLAIMER:** This repository contains active exploitation logic, deliberate state-contamination patterns, and vulnerability research. It is built strictly for system analysis, defensive engineering, and authorized security research. **Do not run these payloads against production systems.**
 
-Start Here → [Phase 01 — Connection vs Request (State Contamination)](./Phase-01-Connection-vs-Request-State-Contamination/README.md)
+**Status:** Ongoing — Actively expanding with weekly phase releases.  
+
+**Latest Release:** [Phase 02 — Lifecycle as Control Flow (FIN vs RST)](./Phase-02-Lifecycle-as-Control-Flow-FIN-vs-RST)
+
+<img width="1732" height="658" alt="POC-Phase-02-Clean" src="https://github.com/user-attachments/assets/6c8b94f5-8b91-4993-b91b-cec981f775e6" />
+
+*(Above: Phase 02 demonstrating a Transport-State Coupling failure leading to blind transaction success)*
+
+## ⚡ Quick Start (Latest Phase)
+```bash
+git clone https://github.com/AnshuKulhade/offensive-socket-security-16-phase.git
+cd offensive-socket-security-16-phase/Phase-02-Lifecycle-as-Control-Flow-FIN-vs-RST
+# Follow the execution steps in the Phase 02 README
+```
 
 ## What This Is
-This repository is a structured research series exploring how socket-based systemsbehave under real-world conditions — and how incorrect assumptions at the connection,state, and protocol layers lead to security failures.
+Most systems incorrectly treat a TCP connection as a trusted reliability and identity boundary. This repository is a system-level analysis exploring how raw socket behaviors break under real-world conditions in .NET (C#)—and how incorrect assumptions at the transport layer lead to systemic backend failures.
+
+**The core thesis:**
+* Connection `!=` Identity
+* Processing Success `!=` Delivery Success
+* Protocol assumptions break under adversarial conditions.
 
 ## Research Approach
+Each phase is a self-contained lab that includes:
+* **Vulnerable Target:** A custom .NET server implementation.
+* **Attacker Simulation:** An exploit client triggering the failure state.
+* **Root Cause Analysis:** Protocol-level breakdown of why the architecture failed.
+* **Defensive Controls:** Enterprise-grade mitigations.
 
-Each phase follows:
+---
 
-- Vulnerable implementation  
-- Exploit reproduction  
-- Root cause analysis  
-- Defensive control mapping  
-
-
-Focus is on:
-
-- System behavior
-- State lifecycle
-- Protocol boundaries
-- Failure-driven analysis
-
-## Why This Matters
-Most systems incorrectly treat a connection as a trusted boundary.
-
-This project demonstrates how:
-
-- Connection ≠ identity
-- State persists across unintended scopes
-- Protocol assumptions break under real conditions
 
 Research Scope (16 Phases)
 Each phase represents a distinct failure pattern in socket-based systems.
