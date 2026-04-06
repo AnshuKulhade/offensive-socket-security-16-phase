@@ -1,5 +1,6 @@
 # Phase 02 — Lifecycle as Control Flow (FIN vs RST)
 
+**Parent Repository:** [⬅️ Back to Main 16-Phase Series](../README.md)
 ---
 
 ## Overview
@@ -17,6 +18,24 @@ This assumption leads to **state inconsistency**, where execution succeeds but c
 
 ## Running the Project
 
+<img width="1732" height="658" alt="POC-Phase-02-Clean" src="https://github.com/user-attachments/assets/6c8b94f5-8b91-4993-b91b-cec981f775e6" />
+*(Above: The attacker triggering the RST before the server can confirm the transaction)*
+
+
+### Option A: .NET CLI 
+Open two separate terminals.
+
+**Terminal 1 (Target Server):**
+```bash
+cd Server_Fin_Rst
+dotnet run
+``` 
+**Terminal 2 (Attacker Client):**
+```bash
+cd Sender
+dotnet run
+```
+## Using .NET Framework GUI
 Set multiple startup projects in Visual Studio:
 
 1. Right click solution → Set Startup Projects  
