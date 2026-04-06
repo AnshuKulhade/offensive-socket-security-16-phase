@@ -15,7 +15,21 @@ This assumption leads to **state contamination**, where authentication persists 
 
 
 ## Running the Project
+### Option A: .NET CLI 
+Open two separate terminals.
 
+**Terminal 1 (Target Server):**
+```bash
+cd ServerListener
+dotnet run
+```
+**Terminal 2 (Attacker Client):**
+```bash
+cd ClientSender
+dotnet run
+```
+
+## Using .NET Framework GUI
 Set multiple startup projects in Visual Studio:
 
 1. Right click solution → Set Startup Projects  
