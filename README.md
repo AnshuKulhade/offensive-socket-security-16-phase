@@ -4,16 +4,17 @@
 
 **Status:** Ongoing — Actively expanding with weekly phase releases.  
 
-**Latest Release:** [Phase 02 — Lifecycle as Control Flow (FIN vs RST)](./Phase-02-Lifecycle-as-Control-Flow-FIN-vs-RST)
+**Latest Release:** [Phase 03 — Blocking, Waiting, ThreadPool Starvation (Thread Pinning)](Phase-03-Blocking-Threadpool-Starvation-Thread-Pinning/)
 
-<img width="1732" height="658" alt="POC-Phase-02-Clean" src="https://github.com/user-attachments/assets/6c8b94f5-8b91-4993-b91b-cec981f775e6" />
+<img width="1180" height="581" alt="Phase-03-POC" src="https://github.com/user-attachments/assets/04e47067-1a91-4d51-a7d9-5acc0e34ffe0" />
 
-*(Above: Phase 02 demonstrating a Transport-State Coupling failure leading to blind transaction success)*
+
+>*(Above: Phase 03 demonstrating blocking `Receive()` calls causing ThreadPool starvation and application-layer DoS)*
 
 ## ⚡ Quick Start (Latest Phase)
 ```bash
 git clone https://github.com/AnshuKulhade/offensive-socket-security-16-phase.git
-cd offensive-socket-security-16-phase/Phase-02-Lifecycle-as-Control-Flow-FIN-vs-RST
+cd offensive-socket-security-16-phase/Phase-03-Blocking-Threadpool-Starvation-Thread-Pinning
 # Follow the execution steps in the Phase 02 README
 ```
 
