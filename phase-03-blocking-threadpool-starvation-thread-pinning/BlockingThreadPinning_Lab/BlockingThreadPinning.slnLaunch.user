@@ -3,11 +3,11 @@
     "Name": "New Profile",
     "Projects": [
       {
-        "Path": "BlockingThreadPinning\\BlockingThreadPinning.csproj",
+        "Path": "ClientSender\\ClientSender.csproj",
         "Action": "Start"
       },
       {
-        "Path": "ClientSender\\ClientSender.csproj",
+        "Path": "BlockingThreadPinning\\BlockingThreadPinning.csproj",
         "Action": "Start"
       }
     ]
