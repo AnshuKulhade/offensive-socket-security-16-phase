@@ -33,6 +33,14 @@ To execute this exploit deterministically on a local machine, we must **force th
 ## Execution Timeline: The "Golden Window"
 
 A standard race condition relies on luck. This framework relies on deterministic state-tracking. By profiling the server's hardware, we map the exact microsecond timeline of the vulnerability:
+Based on the telemetry proof below, we can map the exact microsecond timeline of the vulnerability:
+
+* **0ms [Check]** → Server validates file existence (T1).
+* **405ms [Boundary]** → Physical SSD read (`File.ReadAllBytes`) completes. The OS file handle is released.
+* **406ms [Swap]** → Attacker exception loop detects the dropped lock. The file is wiped and modified.
+* **672ms [Use]** → CPU hashing finishes (267ms later). Server blindly re-reads the file (`File.ReadAllText`) and executes the poisoned content.
+
+> **⏱️ A Note on Timing Variability:** The exact millisecond durations shown in the telemetry are not fixed. They fluctuate wildly based on your NVMe/SSD read speeds, current CPU load, and OS thread scheduling. However, the exploit is deterministic because it **does not guess time**. The attacker's polling loop simply waits for the OS to release the I/O lock, executing the swap regardless of whether the read phase takes 40ms or 4000ms.
 
 ---
 ## Attacker Architecture: The 4 Pillars
