@@ -4,17 +4,18 @@
 
 **Status:** Ongoing — Actively expanding with weekly phase releases.  
 
-**Latest Release:** [Phase 03 — Blocking, Waiting, ThreadPool Starvation (Thread Pinning)](Phase-03-Blocking-Threadpool-Starvation-Thread-Pinning/)
-
-<img width="1180" height="581" alt="Phase-03-POC" src="https://github.com/user-attachments/assets/04e47067-1a91-4d51-a7d9-5acc0e34ffe0" />
+**Latest Release:** [Phase-04-Time-of-Check vs Time-of-Use-(TOCTOU)](Phase-04-Time-of-Check%20vs%20Time-of-Use-(TOCTOU)/)
 
 
->*(Above: Phase 03 demonstrating blocking `Receive()` calls causing ThreadPool starvation and application-layer DoS)*
+<img width="1910" height="940" alt="Phase-04-POC" src="https://github.com/user-attachments/assets/6c0826d8-6492-48a2-ac24-88caa10b322e" />
+
+
+>*(Phase 04: Weaponizing TOCTOU Race Conditions — Defeating the Windows File Lock by exploiting the deterministic gap between I/O-bound reads and CPU-bound validation.)*
 
 ## ⚡ Quick Start (Latest Phase)
 ```bash
 git clone https://github.com/AnshuKulhade/offensive-socket-security-16-phase.git
-cd offensive-socket-security-16-phase/Phase-03-Blocking-Threadpool-Starvation-Thread-Pinning
+cd offensive-socket-security-16-phase/Phase-04-Time-of-Check%20vs%20Time-of-Use-(TOCTOU)
 # Follow the execution steps in the Phase 02 README
 ```
 
