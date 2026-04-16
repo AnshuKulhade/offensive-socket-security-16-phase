@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerTOCTOU", "TimeTOCTOU\ServerTOCTOU.csproj", "{3CA86B91-3340-4CFC-AFE4-3BEE28023BDF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9F97D53E-6A0A-4271-A7B6-A28C58E47D42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientTOCTOU", "ClientTOCTOU\ClientTOCTOU.csproj", "{6F740031-2425-4BED-863A-BD678E5C7AC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CA86B91-3340-4CFC-AFE4-3BEE28023BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CA86B91-3340-4CFC-AFE4-3BEE28023BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CA86B91-3340-4CFC-AFE4-3BEE28023BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CA86B91-3340-4CFC-AFE4-3BEE28023BDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F740031-2425-4BED-863A-BD678E5C7AC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F740031-2425-4BED-863A-BD678E5C7AC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F740031-2425-4BED-863A-BD678E5C7AC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F740031-2425-4BED-863A-BD678E5C7AC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
