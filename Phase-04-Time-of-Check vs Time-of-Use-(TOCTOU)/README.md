@@ -1,4 +1,4 @@
-# Phase 04 — TOCTOU: Defeating the OS File Lock
+# Phase 04 — TOCTOU (Time-of-Check to Time-of-Use Race Condition)
 
 **Parent Repository:** [⬅️ Back to Main 16-Phase Series](../README.md)
 
