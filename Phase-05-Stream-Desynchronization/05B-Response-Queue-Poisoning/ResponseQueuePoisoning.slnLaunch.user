@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "ResponseQueuePoisoning\\ResponseQueuePoisoning.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Attacker\\Attacker.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
