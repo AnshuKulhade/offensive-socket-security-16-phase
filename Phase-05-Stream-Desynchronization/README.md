@@ -18,11 +18,11 @@ Phase-05-Stream-Desynchronization/
 │   ├── README.md      (Execution steps & POC screenshot)
 │   └── Server.cs / Attacker.cs
 │
-│── 05B-Queue-Poisoning/
+│── 05B-Response-Queue-Poisoning/
 │   ├── README.md      (Execution steps & POC screenshot)
 │   └── Server.cs / Attacker.cs
 │
-│── 05C-CL-TE-Smuggling/
+│── 05C-Request-Smuggling/
 │   ├── README.md      (Execution steps & POC screenshot)
 │   └── Proxy.cs / Backend.cs / Attacker.cs
 ```
