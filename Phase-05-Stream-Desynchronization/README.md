@@ -1,4 +1,5 @@
 # Phase 05 — Stream Desynchronization
+**Parent Repository:** [⬅️ Back to Phase-05-Stream-Desynchronization](../README.md)
 
 ## The Thesis
 
