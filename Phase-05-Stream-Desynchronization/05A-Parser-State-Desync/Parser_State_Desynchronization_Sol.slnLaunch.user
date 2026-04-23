@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Parser_State_Dsync\\Parser_State_Desynchronization.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Attacker\\Attacker.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
