@@ -4,13 +4,16 @@
 
 **Status:** Ongoing — Actively expanding with weekly phase releases.  
 
-**Latest Release:** [Phase-04-Time-of-Check vs Time-of-Use-(TOCTOU)](Phase-04-Time-of-Check%20vs%20Time-of-Use-(TOCTOU)/)
+
+**Latest Release:** [Phase-05-Stream-Desynchronization](Phase-05-Stream-Desynchronization/)
 
 
-<img width="1910" height="940" alt="Phase-04-POC" src="https://github.com/user-attachments/assets/6c0826d8-6492-48a2-ac24-88caa10b322e" />
+<img width="1235" height="662" alt="05C-POC" src="https://github.com/user-attachments/assets/be01e2cb-3719-4d38-a8d8-6fb9bc89c6de" />
 
 
->*(Phase 04: Weaponizing TOCTOU Race Conditions — Defeating the Windows File Lock by exploiting the deterministic gap between I/O-bound reads and CPU-bound validation.)*
+
+>*(Phase 05: Weaponizing Stream Desynchronization — Defeating multi-tier architectural trust by exploiting continuous TCP byte streams across three vectors: memory state bleed (05A: Parser State Desynchronization), shared Keep-Alive contamination (05B: Backend Response Queue Poisoning), and protocol framing conflicts (05C: HTTP Request Smuggling [CL.TE]).)
+
 
 ## ⚡ Quick Start (Latest Phase)
 ```bash
