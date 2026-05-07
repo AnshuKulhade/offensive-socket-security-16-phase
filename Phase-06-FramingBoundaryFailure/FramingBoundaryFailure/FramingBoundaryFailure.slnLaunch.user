@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "FramingBoundaryFailure\\FramingBoundaryFailure.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Attacker\\Attacker.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
