@@ -5,20 +5,19 @@
 **Status:** Ongoing — Actively expanding with weekly phase releases.  
 
 
-**Latest Release:** [Phase-05-Stream-Desynchronization](Phase-05-Stream-Desynchronization/)
+**Latest Release:** [Connection Reuse & Identity Bleed](Phase-07-Connection-Reuse-&-Identity-Bleed/)
 
 
-<img width="1235" height="662" alt="05C-POC" src="https://github.com/user-attachments/assets/be01e2cb-3719-4d38-a8d8-6fb9bc89c6de" />
+<img width="1175" height="665" alt="POC" src="https://github.com/user-attachments/assets/3068d937-1df2-4075-97e0-0855eae9133d" />
 
 
-
->*(Phase 05: Weaponizing Stream Desynchronization — Defeating multi-tier architectural trust by exploiting continuous TCP byte streams across three vectors: memory state bleed (05A: Parser State Desynchronization), shared Keep-Alive contamination (05B: Backend Response Queue Poisoning), and protocol framing conflicts (05C: HTTP Request Smuggling [CL.TE]).)
+>*(Phase 07: Connection Reuse & Identity Collapse — Collapsing application authentication boundaries by exploiting Layer 4 state persistence across three core mechanics: binding user identity to the physical transport layer (Stateful Socket Poisoning), bypassing per-request authorization checks (Tokenless Privilege Execution), and weaponizing HTTP Keep-Alive tunnels to achieve permanent identity bleed.)
 
 
 ## ⚡ Quick Start (Latest Phase)
 ```bash
 git clone https://github.com/AnshuKulhade/offensive-socket-security-16-phase.git
-cd offensive-socket-security-16-phase/Phase-04-Time-of-Check%20vs%20Time-of-Use-(TOCTOU)
+cd offensive-socket-security-16-phase/tree/main/Phase-07-Connection-Reuse-%26-Identity-Bleed
 # Follow the execution steps in the Phase 02 README
 ```
 
