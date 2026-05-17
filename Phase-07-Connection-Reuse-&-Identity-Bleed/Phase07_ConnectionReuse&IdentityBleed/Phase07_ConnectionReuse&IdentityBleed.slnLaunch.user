@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Phase07_ConnectionReuse\\ServerConn_Reuse.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Attacker\\Attacker.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
